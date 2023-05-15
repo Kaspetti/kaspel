@@ -19,7 +19,7 @@ enum class TokenType {
 
 
 std::unordered_map<std::string, std::string> keyword_patterns = {
-    {"int", R"(int\s+[a-zA-Z][a-zA-Z0-9-_]+\s*=\s*\d+\s*;)"}
+    {"int", R"(int\s+[a-zA-Z_][a-zA-Z0-9_]+\s*=\s*\d+\s*;)"}
 };
 
 
@@ -54,7 +54,7 @@ std::vector<std::string> get_file_contents(const std::string &path) {
     std::ifstream file;
     std::string file_contents;
 
-    file.open("test.kl");
+    file.open(path);
 
     if (file.is_open()) {
         std::string line;
