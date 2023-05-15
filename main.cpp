@@ -1,4 +1,4 @@
-#include "lexer/lexerfsm.cpp"
+#include "lexer/src/lexerfsm.cpp"
 
 int main() {
     FSMStateMachine fsm = FSMStateMachine("test");

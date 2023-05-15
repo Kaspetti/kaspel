@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "../../../include/lexer/fsmstate.h"
+#include "../../include/fsmstate.h"
 
 class TestState2 : public FSMState {
 public:
