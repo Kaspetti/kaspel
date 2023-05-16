@@ -1,3 +1,0 @@
-/home/kmoberg/Documents/kaspel/build/CMakeFiles/KaspeL.dir
-/home/kmoberg/Documents/kaspel/build/CMakeFiles/edit_cache.dir
-/home/kmoberg/Documents/kaspel/build/CMakeFiles/rebuild_cache.dir
