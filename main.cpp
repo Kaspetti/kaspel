@@ -23,7 +23,8 @@ int main(int argc, char* argv[]) {
 
         LexerFSM fsm = LexerFSM(lines);
         fsm.run();
-
+        
+        std::cout << '\n';
         for (Token token : fsm.getTokens()) {
             std::cout << fsm.tokenToString(token) << std::endl;
         }

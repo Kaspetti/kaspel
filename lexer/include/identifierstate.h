@@ -1,4 +1,4 @@
-#include <regex>
+#include <unordered_set>
 
 #include "fsmstate.h"
 
@@ -11,5 +11,6 @@ public:
 private:
     std::string identifier; 
 
-    std::regex identifierRegex;
+    std::unordered_set<char> startChars;
+    std::unordered_set<char> validChars;
 };

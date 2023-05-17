@@ -3,21 +3,33 @@
 #include "../../include/identifierstate.h"
 
 IdentifierState::IdentifierState() {
-    identifierRegex = std::regex("[a-zA-Z_][a-zA-Z0-9_]*");
+    std::string startCharsStr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+    std::string validCharsStr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789";
+
+    startChars = std::unordered_set<char>(startCharsStr.begin(), startCharsStr.end()); 
+    validChars = std::unordered_set<char>(validCharsStr.begin(), validCharsStr.end());
 }
 
 void IdentifierState::step(LexerFSM &stateMachine, const char &input) {
     if (input == ' ') {
-        if (std::regex_match(identifier, identifierRegex)) {
-            stateMachine.addToken(std::tuple<TokenType, std::string>(TokenType::IDENTIFIER, identifier));
-        }
-        else {
-            std::cout << "Invalid identifier: " << identifier << std::endl;
-        }
+        stateMachine.addToken(std::tuple<TokenType, std::string>(TokenType::IDENTIFIER, identifier));
 
         identifier = "";
-        stateMachine.setState(stateMachine.startState);
+        stateMachine.setState(stateMachine.operatorState);
         return;
+    }
+
+    if (identifier == "") {
+        if (startChars.find(input) == startChars.end()) {
+            std::cout << "Invalid identifier start character: " << input << std::endl;
+            return;
+        }
+    }
+    else {
+        if (validChars.find(input) == validChars.end()) {
+            std::cout << "Invalid identifier character: " << input << std::endl;
+            return;
+        }
     }
 
     identifier += input;

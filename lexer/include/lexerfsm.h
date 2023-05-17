@@ -69,6 +69,7 @@ public:
     FSMState* startState;
     FSMState* keywordState;
     FSMState* identifierState;
+    FSMState* operatorState;
 
 private:
     std::string input;
