@@ -23,6 +23,10 @@ int main(int argc, char* argv[]) {
 
         LexerFSM fsm = LexerFSM(lines);
         fsm.run();
+
+        for (Token token : fsm.getTokens()) {
+            std::cout << fsm.tokenToString(token) << std::endl;
+        }
     }
     else {
         std::cout << "File not found: " << path << std::endl;

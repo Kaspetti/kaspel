@@ -2,11 +2,13 @@
 
 #include <iostream>
 
-void StartState::on(LexerFSM &stateMachine, const char &input) {
-    std::cout << input << std::endl;
-}
 
-void StartState::off() {
+void StartState::step(LexerFSM &stateMachine, const char &input) {
+    if (input == ' ') {
+        return;
+    }
 
+    stateMachine.setState(stateMachine.keywordState);
+    stateMachine.keywordState->step(stateMachine, input);
 }
 
