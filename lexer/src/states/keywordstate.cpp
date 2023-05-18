@@ -20,7 +20,7 @@ void KeywordState::step(LexerFSM &stateMachine, const char &input) {
         }
 
         keyword = "";
-        stateMachine.setState(stateMachine.identifierState);
+        stateMachine.setState(stateMachine.operatorState);
         return; 
     } 
 
