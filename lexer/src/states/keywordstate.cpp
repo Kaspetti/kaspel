@@ -14,7 +14,7 @@ KeywordState::KeywordState() {
 
 
 void KeywordState::step(LexerFSM &stateMachine, const char &input) {
-    if (input == ' ') {
+    if (std::isspace(input)) {
         if (keywords.find(keyword) == keywords.end()) {
             std::regex regex(identifierPattern);
             std::smatch match;

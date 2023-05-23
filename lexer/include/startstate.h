@@ -14,6 +14,6 @@ public:
 
 private:
     std::unordered_set<char> operators;
-    std::unordered_set<char> symbols;
+    std::unordered_set<char> delimiters;
 };
 

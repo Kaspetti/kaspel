@@ -16,7 +16,9 @@ enum class TokenType {
     IDENTIFIER,
     KEYWORD,
     OPERATOR,
-    UNKNOWN
+    DELIMITER,
+    STRING_LITERAL,
+    UNKNOWN,
 };
 
 
@@ -69,6 +71,7 @@ public:
     FSMState* startState;
     FSMState* keywordState;
     FSMState* operatorState;
+    FSMState* stringLiteralState;
 
     FSMState* currentState;
 

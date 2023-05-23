@@ -1,4 +1,18 @@
+    2 .cache/clangd/index/fsmstate.h.47C20C1F0ECB98CA.idx
+    6 .cache/clangd/index/identifierstate.cpp.618CC5A6B297AE9B.idx
+    5 .cache/clangd/index/identifierstate.h.016F91668334A0A3.idx
+    5 .cache/clangd/index/keywordstate.cpp.D103697496D92E70.idx
+    6 .cache/clangd/index/keywordstate.h.A974FA2BA2542D5C.idx
+   18 .cache/clangd/index/lexerfsm.cpp.2F4A050FD61EF570.idx
+   19 .cache/clangd/index/lexerfsm.h.2C2A797AE62CDE88.idx
+    5 .cache/clangd/index/main.cpp.3FC85E339E595770.idx
+    8 .cache/clangd/index/operatorstate.cpp.3713ABC43A5C5275.idx
+    6 .cache/clangd/index/operatorstate.h.B65349A37F3329B6.idx
+    9 .cache/clangd/index/startstate.cpp.C6666569F509C73A.idx
+    9 .cache/clangd/index/startstate.h.A9A8226FB4979900.idx
     3 .gitignore
+   30 .vscode/launch.json
+   27 .vscode/tasks.json
    11 CMakeLists.txt
    28 lexer/include/fsmstate.h
    25 lexer/include/keywordstate.h
@@ -10,5 +24,6 @@
    39 lexer/src/states/keywordstate.cpp
    50 lexer/src/states/operatorstate.cpp
    38 lexer/src/states/startstate.cpp
+   26 line_count.txt
    37 main.cpp
-  507 total
+  688 total
