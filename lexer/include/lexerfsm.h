@@ -68,14 +68,13 @@ public:
     // The different states of the FSM.
     FSMState* startState;
     FSMState* keywordState;
-    FSMState* identifierState;
     FSMState* operatorState;
+
+    FSMState* currentState;
 
 private:
     std::string input;
     
-    FSMState* currentState;
-
     std::vector<Token> tokens;
 };
 #endif //LEXERFSM_H

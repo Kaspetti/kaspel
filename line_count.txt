@@ -1,0 +1,14 @@
+    3 .gitignore
+   11 CMakeLists.txt
+   28 lexer/include/fsmstate.h
+   25 lexer/include/keywordstate.h
+   80 lexer/include/lexerfsm.h
+   21 lexer/include/operatorstate.h
+   19 lexer/include/startstate.h
+   95 lexer/lexer.cpp
+   61 lexer/src/lexerfsm.cpp
+   39 lexer/src/states/keywordstate.cpp
+   50 lexer/src/states/operatorstate.cpp
+   38 lexer/src/states/startstate.cpp
+   37 main.cpp
+  507 total

@@ -3,7 +3,6 @@
 #include "../include/lexerfsm.h"
 #include "../include/startstate.h"
 #include "../include/keywordstate.h"
-#include "../include/identifierstate.h"
 #include "../include/operatorstate.h"
 
 
@@ -12,7 +11,6 @@ LexerFSM::LexerFSM(std::string input){
 
     startState = new StartState();
     keywordState = new KeywordState();
-    identifierState = new IdentifierState();
     operatorState = new OperatorState();
     currentState = startState;
 }
@@ -20,7 +18,6 @@ LexerFSM::LexerFSM(std::string input){
 LexerFSM::~LexerFSM(){
     delete startState;
     delete keywordState;
-    delete identifierState;
     delete operatorState;
 }
 

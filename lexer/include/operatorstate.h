@@ -12,6 +12,10 @@ public:
     void step(LexerFSM &stateMachine, const char &input) override;
 
 private:
-    std::unordered_set<char> operators;
+    std::unordered_set<char> operatorChars;
+
+    std::unordered_set<std::string> operators;
+
+    std::string curOperator;
 };
 

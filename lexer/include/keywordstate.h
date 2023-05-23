@@ -20,4 +20,6 @@ private:
     std::string keyword;
 
     std::unordered_set<std::string> keywords;
+
+    std::string identifierPattern;
 };
