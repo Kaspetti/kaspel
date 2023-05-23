@@ -5,6 +5,7 @@
 #include "../include/keywordstate.h"
 #include "../include/operatorstate.h"
 #include "../include/stringliteralstate.h"
+#include "../include/charliteralstate.h"
 
 
 LexerFSM::LexerFSM(std::string input){
@@ -14,6 +15,7 @@ LexerFSM::LexerFSM(std::string input){
     keywordState = new KeywordState();
     operatorState = new OperatorState();
     stringLiteralState = new StringLiteralState();
+    charLiteralState = new CharLiteralState();
 
     currentState = startState;
 }
@@ -23,6 +25,7 @@ LexerFSM::~LexerFSM(){
     delete keywordState;
     delete operatorState;
     delete stringLiteralState;
+    delete charLiteralState;
 }
 
 void LexerFSM::setState(FSMState* state){
@@ -61,6 +64,9 @@ std::string LexerFSM::tokenToString(Token token) {
             break;
         case TokenType::STRING_LITERAL:
             output = "STRING_LITERAL";
+            break;
+        case TokenType::CHAR_LITERAL:
+            output = "CHAR_LITERAL";
             break;
         default:
             output = "UNKNOWN";

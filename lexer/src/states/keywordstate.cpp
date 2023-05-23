@@ -6,7 +6,10 @@
 
 KeywordState::KeywordState() {
     keywords = {
-        "int"
+        "int",
+        "char",
+        "string",
+        "bool",
     };
 
     identifierPattern = R"([a-zA-z_]+[a-zA-z0-9_]*)";

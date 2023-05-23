@@ -37,7 +37,7 @@ void StartState::step(LexerFSM &stateMachine, const char &input) {
         stateMachine.addToken(std::tuple<TokenType, std::string>(TokenType::DELIMITER, std::string(1, input)));
     }
     else if (input == '\''){
-        std::cout << "Char literal" << std::endl;
+        stateMachine.setState(stateMachine.charLiteralState);
     }
     else if (input == '"'){
         stateMachine.setState(stateMachine.stringLiteralState);
