@@ -2,3 +2,4 @@
 *.kl
 /build
 .vscode/
+.config/
