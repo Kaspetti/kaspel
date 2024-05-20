@@ -21,6 +21,7 @@ Kaspel kjem i to versjonar:
 Programmering i dag kommer med en rekke verktøy som hjelper programmereren i kodingsprosessen. Kodekompletteringsverktøy gir brukeren en liste med forslag basert på hva de skriver, og språkservere fanger opp feil før programmet kjøres. Men hva med god, gammeldags grammatikk? Hva hjelper brukeren med å velge gode variabelnavn som gir grammatisk mening?
 
 Møt **Kaspel!**
+
 Kaspel er et nytt programmeringsspråk som gir grammatisk hjelp i både nynorsk og bokmål! Ved å bruke de to tilgjengelige endelsene **.nn** og **.bm** vet tolkeren hvilken grammatikk den skal bruke, og hvis du staver feil, vil en feil bli kastet!
 Kaspel kommer i to versjoner:
 
