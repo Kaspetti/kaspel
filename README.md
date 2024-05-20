@@ -1,20 +1,34 @@
 # Kaspel
 
-## Why Kaspel?
-Programming nowadays come with a multitude of tools which aid the programmer in the coding process.
-Code completion tools provide the user with a list of suggestions based on what they write, and Language Servers catch errors before the program is run.
-But what about good old fashioned grammar? What is aiding the user with picking good variable names which make gramatical sense?
+## Kvifor Kaspel?
+Programmering i dag kjem med ei mengd verktøy som hjelper programmeraren i kodingsprosessen. Kodekompletteringsverktøy gjev brukaren ei liste med forslag basert på kva dei skriv, og språkserverar fangar opp feil før programmet vert køyrt. Men kva med god, gamaldags grammatikk? Kva hjelper brukaren med å velje gode variabelnamn som gjev grammatisk meining?
 
-Enter **Kaspel**!
+Møt **Kaspel!**
 
-Kaspel is a new programming language which provide gramatical aid in both Nynorsk and Bokmål!
-Using the two provided extensions **.nn** and **.bm** the interpreter knows which grammar it should use, and if you mispell, an error will be thrown!
+Kaspel er eit nytt programmeringsspråk som gjev grammatisk hjelp i både nynorsk og bokmål! Ved å bruke dei to tilgjengelege endingane **.nn** og **.bm** veit tolkaren kva grammatikk han skal bruke, og viss du stavar feil, vil ein feil bli kasta!
+Kaspel kjem i to versjonar:
 
-Kaspel comes in two versions:
-*   Online
-    *   The online version of Kaspel uses an online dictionary to check the grammar, so the programmer does not have to have the dictionary on their computer!
-*   Offline
-    *   The offline version of Kaspel lets the programmer have the dictionary locally installed on their computer so they can program without the need of a network connection!
+* På nett
+    * Nettversjonen av Kaspel brukar ei nettordbok for å sjekke grammatikken, så programmeraren treng ikkje å ha ordboka på datamaskina si!
 
 
-    ## Its amazing!
+* Fråkopla
+    * Fråkopla-versjonen av Kaspel let programmeraren ha ordboka lokalt installert på datamaskina si, slik at dei kan programmere utan behov for ei nettverkstilkopling!
+
+## Det er fantastisk!
+
+## Hvorfor Kaspel?
+Programmering i dag kommer med en rekke verktøy som hjelper programmereren i kodingsprosessen. Kodekompletteringsverktøy gir brukeren en liste med forslag basert på hva de skriver, og språkservere fanger opp feil før programmet kjøres. Men hva med god, gammeldags grammatikk? Hva hjelper brukeren med å velge gode variabelnavn som gir grammatisk mening?
+
+Møt **Kaspel!**
+Kaspel er et nytt programmeringsspråk som gir grammatisk hjelp i både nynorsk og bokmål! Ved å bruke de to tilgjengelige endelsene **.nn** og **.bm** vet tolkeren hvilken grammatikk den skal bruke, og hvis du staver feil, vil en feil bli kastet!
+Kaspel kommer i to versjoner:
+
+* Online
+    * Online-versjonen av Kaspel bruker en online ordbok for å sjekke grammatikken, så programmereren trenger ikke å ha ordboken på datamaskinen sin!
+
+
+* Offline
+    * Offline-versjonen av Kaspel lar programmereren ha ordboken lokalt installert på datamaskinen sin, slik at de kan programmere uten behov for en nettverkstilkobling!
+
+## Det er fantastisk!
